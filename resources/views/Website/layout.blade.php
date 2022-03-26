@@ -8,10 +8,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gaurab</title>
-  <link rel="shortcut icon" href="{{ asset('assets/image/favicon.png')}}" type="image/x-icon">
+  <title>
+    @yield('title')
+  </title>
+  <link rel="shortcut icon" href="{{ asset('image/favicon.png')}}" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.css')}}">
   <link rel="stylesheet" href="{{asset('fonts/icon-font/css/style.css')}}">
   <link rel="stylesheet" href="{{asset('fonts/typography-font/typo.css')}}">
   <link rel="stylesheet" href="{{asset('fonts/fontawesome-5/css/all.css')}}">
@@ -22,12 +24,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="{{ asset('assets/plugins/aos/aos.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('assets/plugins/fancybox/jquery.fancybox.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('assets/plugins/nice-select/nice-select.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('assets/plugins/slick/slick.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/aos/aos.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/fancybox/jquery.fancybox.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/nice-select/nice-select.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/slick/slick.min.css')}}">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="{{ asset('assets/css/main.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/main.css')}}">
   <!-- Custom stylesheet -->
 </head>
 
@@ -49,9 +51,9 @@
           <div class="brand-logo">
             <a href="#">
               <!-- light version logo (logo must be black)-->
-              <img src="{{ asset('assets/image/logo/logo-black.png')}}" alt="" class="light-version-logo">
+              <img src="{{ asset('image/logo/logo-black.png')}}" alt="" class="light-version-logo">
               <!-- Dark version logo (logo must be White)-->
-              <img src="{{ asset('assets/image/logo/logo-white.png')}}" alt="" class="dark-version-logo">
+              <img src="{{ asset('image/logo/logo-white.png')}}" alt="" class="dark-version-logo">
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -153,19 +155,19 @@
     </footer>
   </div>
   <!-- Vendor Scripts -->
-  <script src="{{ asset('assets/js/vendor.min.js')}}"></script>
+  <script src="{{ asset('js/vendor.min.js')}}"></script>
   <!-- Plugin's Scripts -->
-  <script src="{{ asset('assets/plugins/fancybox/jquery.fancybox.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/nice-select/jquery.nice-select.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/aos/aos.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/slick/slick.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/counter-up/jquery.counterup.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/isotope/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/isotope/packery.pkgd.min.js')}}"></script>
-  <script src="{{ asset('assets/plugins/isotope/image.loaded.js')}}"></script>
-  <script src="{{ asset('assets/plugins/menu/menu.js')}}"></script>
+  <script src="{{ asset('plugins/fancybox/jquery.fancybox.min.js')}}"></script>
+  <script src="{{ asset('plugins/nice-select/jquery.nice-select.min.js')}}"></script>
+  <script src="{{ asset('plugins/aos/aos.min.js')}}"></script>
+  <script src="{{ asset('plugins/slick/slick.min.js')}}"></script>
+  <script src="{{ asset('plugins/counter-up/jquery.counterup.min.js')}}"></script>
+  <script src="{{ asset('plugins/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ asset('plugins/isotope/packery.pkgd.min.js')}}"></script>
+  <script src="{{ asset('plugins/isotope/image.loaded.js')}}"></script>
+  <script src="{{ asset('plugins/menu/menu.js')}}"></script>
   <!-- Activation Script -->
-  <script src="{{ asset('assets/js/custom.js')}}"></script>
+  <script src="{{ asset('js/custom.js')}}"></script>
 </body>
 
 

@@ -1,4 +1,5 @@
 @extends('website.layout')
+@section('title','Coding Ninja')
 @section('content')
     <div class="hero-area-l-14 position-relative z-index-1 overflow-hidden">
       <div class="container">
