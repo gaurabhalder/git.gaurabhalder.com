@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sass subscription </title>
+  <title>{{ infos::get('title') }}</title>
   <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -32,7 +32,7 @@
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <a class="shade-floating-btn" href="https://finestdevs.com/shade/#shade-pricing"><img src="image/download.svg"/> Download Shade Now</a>
+  <a class="shade-floating-btn" href="https://finestdevs.com/shade/#shade-pricing"><i class="fa-solid fa-phone-arrow-up-right"></i>Call Now</a>
   <div class="site-wrapper overflow-hidden position-relative">
     <!-- Site Header -->
     <!-- Preloader -->

@@ -1,5 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Models\User;
+use App\Models\info; 
+
 Route::get('send-mail', function () {
 
    
@@ -23,6 +28,9 @@ Route::get('send-mail', function () {
 });
 Route::get('/', function () {
     return view('website.home');
+});
+Route::get('/about', function () {
+    return view('website.about');
 });
 //Route::redirect('/', '/login');
 Route::get('/home', function () {
@@ -48,7 +56,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Users
     Route::delete('users/destroy', 'UsersController@massDestroy')->name('users.massDestroy');
     Route::resource('users', 'UsersController');
-
+ 
     // Portfolio
     Route::delete('portfolios/destroy', 'PortfolioController@massDestroy')->name('portfolios.massDestroy');
     Route::post('portfolios/media', 'PortfolioController@storeMedia')->name('portfolios.storeMedia');
