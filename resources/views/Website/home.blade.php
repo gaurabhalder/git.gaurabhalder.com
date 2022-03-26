@@ -13,7 +13,7 @@
           </div>
           <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
             <div class="banner-image-l-14">
-              <img src="image/l4/hero-img.png" alt="" class="w-100 mt-xl-n10">
+              <img src="{{ asset('public/image/aa.png')}}"alt="" class="w-100 mt-xl-n10">
             </div>
           </div>
         </div>
@@ -32,19 +32,19 @@
           <div class="col-lg-12">
             <div class="brand-area-l-14-items d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap ">
               <div class="single-brand " data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
-                <img src="image/l2/brand-logo.svg" alt="">
+                <img src="{{ asset('public/image/l2/brand-logo.svg')}}" alt="">
               </div>
               <div class="single-brand " data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-                <img src="image/l2/brand-logo-1.svg" alt="">
+                <img src="{{ asset('public/image/l2/brand-logo-1.svg')}}" alt="">
               </div>
               <div class="single-brand " data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
-                <img src="image/l2/brand-logo-2.svg" alt="">
+                <img src="{{ asset('public/image/l2/brand-logo-2.svg')}}" alt="">
               </div>
               <div class="single-brand " data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-                <img src="image/l2/brand-logo-3.svg" alt="">
+                <img src="{{ asset('public/image/l2/brand-logo-3.svg')}}" alt="">
               </div>
               <div class="single-brand " data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
-                <img src="image/l2/brand-logo-4.svg" alt="">
+                <img src="{{ asset('public/image/l2/brand-logo-4.svg')}}" alt="">
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
           </div>
           <div class="offset-xl-2 col-xl-6 col-lg-6 col-md-8 pl-xl-11 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
             <div class="content-img">
-              <img src="image/l4/content-img-1.png" alt="" class="w-100 w-xl-auto">
+              <img src="{{ asset('public/image/l4/content-img-1.png')}}"alt="" class="w-100 w-xl-auto">
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6 col-md-8" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
             <div class="content-img pr-lg-13">
-              <img src="image/l4/content-img-2.png" alt="" class="w-100">
+              <img src="{{ asset('public/image/l4/content-img-2.png')}}"alt="" class="w-100">
             </div>
           </div>
           <div class="col-xl-4 offset-xl-2 col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
@@ -114,7 +114,7 @@
           <div class="col-lg-6 col-md-8 col-sm-10 px-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
             <div class="content-area  d-flex">
               <div class="circle-85 hover-icon">
-                <img src="image/l4/f-icon-1.png" alt="">
+                <img src="{{ asset('public/image/l4/f-icon-1.png')}}"alt="">
               </div>
               <div class="content-body pl-sm-14 pl-5">
                 <h5>
@@ -129,7 +129,7 @@
           <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
             <div class="content-area  d-flex ">
               <div class="circle-85 hover-icon">
-                <img src="image/l4/f-icon-2.png" alt="">
+                <img src="{{ asset('public/image/l4/f-icon-2.png')}}"alt="">
               </div>
               <div class="content-body">
                 <h5>
@@ -144,7 +144,7 @@
             <div class="content-area  d-flex ">
               <!-- circle-85 start -->
               <div class="circle-85 hover-icon">
-                <img src="image/l4/f-icon-3.png" alt="">
+                <img src="{{ asset('public/image/l4/f-icon-3.png')}}"alt="">
               </div>
               <div class="content-body">
                 <h5>
@@ -158,7 +158,7 @@
           <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
             <div class="content-area  d-flex ">
               <div class="circle-85  hover-icon">
-                <img src="image/l4/f-icon-4.png" alt="" />
+                <img src="{{ asset('public/image/l4/f-icon-4.png')}}"alt="" />
               </div>
               <div class="content-body">
                 <h5>
