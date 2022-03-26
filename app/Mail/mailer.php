@@ -29,6 +29,6 @@ class mailer extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from ItSolutionStuff.com')->view('home');
+        return $this->subject('Mail from {{$}}.com')->view('home');
     }
 }
