@@ -6,10 +6,9 @@
         <div class="row position-relative justify-content-center">
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 pr-0 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
             <div class="content">
-              <h1>Get More Customers</h1>
-              <p>Create custom landing pages with Shades that convert more visitors than any website—no coding
-                required.</p>
-              <a href="#" class="btn focus-reset">Start my free trial</a>
+              <h1>Hi ! I am Gaurab Halder</h1>
+              <p>I am a Full Stack Web Developer </p>
+              <a href="tel: {!! info::get('phone') !!}" class="btn focus-reset">Call Now !</a>
             </div>
           </div>
           <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
@@ -26,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h4>The #1 Landing Page Platform for 15,000+ Brands</h4>
+            <h4>I belive in quality over quantity thus making every small tweak Count!</h4>
           </div>
         </div>
         <div class="row img-grayscale">
@@ -65,9 +64,7 @@
             <div class="h-100 section-heading-8 content text-lg-start text-center">
               <h2>Build
                 Beautiful Landing Pages Faster.</h2>
-              <p>Create
-                custom landing pages with Shades that
-                convert more visitors than any website—no coding required.</p>
+              <p>Let me help you make beautiful websites with that extra fast speed</p>
               <a href="#" class="btn focus-reset">
                 Get Started Now
                 <i class="fas fa-angle-right"></i>
