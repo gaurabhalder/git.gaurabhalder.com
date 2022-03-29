@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Website;
 use Illuminate\Http\Request;
-
+use App\Models\Info;
 class WebsiteController extends Controller
 {
     /**
@@ -15,6 +15,7 @@ class WebsiteController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**

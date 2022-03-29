@@ -1,6 +1,16 @@
 @extends('website.layout')
 @section('title','Coding Ninja')
 @section('content')
+<?php 
+                use App\Models\Info;
+                use App\Models\Blog;
+                use App\Models\Logo;
+                use App\Models\Mail;
+                use App\Models\Pixel;
+                use App\Models\Portfolio;
+                use App\Models\Testimonial;
+                use App\Models\Website;
+              ?>
     <div class="hero-area-l-14 position-relative z-index-1 overflow-hidden">
       <div class="container">
         <div class="row position-relative justify-content-center">
@@ -8,7 +18,8 @@
             <div class="content">
               <h1>Hi ! I am Gaurab Halder</h1>
               <p>I am a Full Stack Web Developer </p>
-              <a href="tel: {!! info::get('phone') !!}" class="btn focus-reset">Call Now !</a>
+              
+              <a href="tel: {!! Info::get('phone') !!}" class="btn focus-reset">Call Now !</a>
             </div>
           </div>
           <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">

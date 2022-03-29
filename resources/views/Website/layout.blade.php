@@ -1,7 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-
+              <?php 
+                use App\Models\Info;
+                use App\Models\Blog;
+                use App\Models\Logo;
+                use App\Models\Mail;
+                use App\Models\Pixel;
+                use App\Models\Portfolio;
+                use App\Models\Testimonial;
+                use App\Models\Website;
+                use App\Http\Controller\InfoController;
+              ?>
 <!-- Mirrored from finestdevs.com/demos/shade-preview/index-14.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2022 14:12:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -36,6 +46,7 @@
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
   <a class="shade-floating-btn" href="tel:+8801873535171"><i class="fa-solid fa-phone-arrow-up-right"></i>Call Now</a>
   <div class="site-wrapper overflow-hidden position-relative">
+    
     <!-- Site Header -->
     <!-- Preloader -->
     <!-- <div id="loading">
@@ -95,6 +106,7 @@
     </header>
     <!-- navbar- -->
     <!-- Hero Area -->
+    
     @yield('content')
     <!-- Footer Area -->
     <footer class="footer-area-l-12 position-relative">
@@ -150,6 +162,7 @@
               </div>
             </div>
           </div>
+          {{Info::get('footer')}}
         </div>
       </div>
     </footer>

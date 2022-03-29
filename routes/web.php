@@ -32,6 +32,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('website.about');
 });
+Route::resource('Info', InfoController::class);
 //Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
