@@ -10,7 +10,9 @@
                 use App\Models\Portfolio;
                 use App\Models\Testimonial;
                 use App\Models\Website;
-              ?>
+                use App\Http\Controller\InfoController;
+               $infos=info::get();
+              ?> 
     <div class="hero-area-l-14 position-relative z-index-1 overflow-hidden">
       <div class="container">
         <div class="row position-relative justify-content-center">
@@ -19,7 +21,7 @@
               <h1>Hi ! I am Gaurab Halder</h1>
               <p>I am a Full Stack Web Developer </p>
               
-              <a href="tel: {!! Info::get('phone') !!}" class="btn focus-reset">Call Now !</a>
+              <a href="tel:{{ $infos[0]['phone'] }}" class="btn focus-reset">Call Now !</a>
             </div>
           </div>
           <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
@@ -183,7 +185,7 @@
       </div>
     </div>
     <!-- Pricing-area section -->
-    <div class="pricing-area-l14 position-relative overflow-hidden z-index-1">
+    <div id="name" class="pricing-area-l14 position-relative overflow-hidden z-index-1">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-xl-6 col-lg-7 col-md-10 text-center" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">

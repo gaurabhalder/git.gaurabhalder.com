@@ -1,17 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-              <?php 
-                use App\Models\Info;
-                use App\Models\Blog;
-                use App\Models\Logo;
-                use App\Models\Mail;
-                use App\Models\Pixel;
-                use App\Models\Portfolio;
-                use App\Models\Testimonial;
-                use App\Models\Website;
-                use App\Http\Controller\InfoController;
-              ?>
+
 <!-- Mirrored from finestdevs.com/demos/shade-preview/index-14.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2022 14:12:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -44,9 +34,20 @@
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <a class="shade-floating-btn" href="tel:+8801873535171"><i class="fa-solid fa-phone-arrow-up-right"></i>Call Now</a>
+  <a class="shade-floating-btn" href="tel:{{ $infos[0]['phone'] }}"><i class="fa-solid fa-phone-arrow-up-right"></i>Call Now</a>
   <div class="site-wrapper overflow-hidden position-relative">
-    
+  <?php 
+                use App\Models\Info;
+                use App\Models\Blog;
+                use App\Models\Logo;
+                use App\Models\Mail;
+                use App\Models\Pixel;
+                use App\Models\Portfolio;
+                use App\Models\Testimonial;
+                use App\Models\Website;
+                use App\Http\Controller\InfoController;
+               $infos=info::get();
+              ?> 
     <!-- Site Header -->
     <!-- Preloader -->
     <!-- <div id="loading">
@@ -79,7 +80,7 @@
               </div>
               <ul class="site-menu-main">
               <li class="nav-item">
-                  <a href="#"class="nav-link-item">Support</a>
+                  <a href="#name"class="nav-link-item">Support</a>
                 </li><li class="nav-item">
                   <a href="#"class="nav-link-item">Support</a>
                 </li><li class="nav-item">
@@ -92,7 +93,7 @@
             </nav>
           </div>
           <div class="header-btn header-btn-l-14 ms-auto d-none d-xs-inline-flex">
-            <a target="" class="btn btn trail-btn focus-reset" href="tel:+8801873535171">
+            <a target="" class="btn btn trail-btn focus-reset" href="tel:{{ $infos[0]['phone'] }}">
               Call Now!
             </a>
           </div>
@@ -162,7 +163,14 @@
               </div>
             </div>
           </div>
-          {{Info::get('footer')}}
+          
+          
+          
+          {{ $infos[0]['footer'] }}
+          
+          
+          
+          
         </div>
       </div>
     </footer>
