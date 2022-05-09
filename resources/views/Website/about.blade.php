@@ -16,7 +16,7 @@
           <div class="col-lg-12">
             <div class="inner-about-bg-area">
               <div class="bg-image">
-                <img class="w-100" src="image/about/about-us-banner.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/about-us-banner.png')}}" alt="image">
               </div>
               <div class="content">
                 <p>“We strive to work closely together with our customers in solving their problems. We value
@@ -29,7 +29,7 @@
           <div class="col-lg-6 col-md-10 col-sm-10">
             <div class="icon-content-area d-md-flex align-items-center text-center text-md-start">
               <div class="icon">
-                <img src="image/landing-5/heart1.svg" alt="image">
+                <img src="{{ asset('public/image/landing-5/heart1.svg')}}" alt="image">
               </div>
               <div class="content">
                 <p>We are an industry-leading company that values honesty, integrity, and efficiency. Building
@@ -41,7 +41,7 @@
           <div class="col-lg-6 col-md-10 col-sm-10">
             <div class="icon-content-area d-md-flex align-items-center text-center text-md-start">
               <div class="icon icon-2">
-                <img src="image/landing-5/zap1.svg" alt="image">
+                <img src="{{ asset('public/image/landing-5/zap1.svg')}}" alt="image">
               </div>
               <div class="content">
                 <p>We’re a team of highly skilled professionals with years of experience in different fields
@@ -114,7 +114,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-1.png" alt="image">
+                <img class="w-100" src="i{{ asset('public/mage/about/people-1.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -133,7 +133,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-2.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-2.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -152,7 +152,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-3.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-3.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -171,7 +171,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-4.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-4.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -190,7 +190,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-5.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-5.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -209,7 +209,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-6.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-6.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -228,7 +228,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-7.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-7.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -247,7 +247,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="team-card overflow-hidden">
               <div class="image">
-                <img class="w-100" src="image/about/people-8.png" alt="image">
+                <img class="w-100" src="{{ asset('public/image/about/people-8.png')}}" alt="image">
               </div>
               <div class="content text-center">
                 <h4>Gustavo George</h4>
@@ -284,7 +284,7 @@
               </div>
               <div class="news-ltr-l5-bottom d-flex justify-content-center">
                 <div class="icon">
-                  <img src="image/landing-5/lock.svg" alt="icon">
+                  <img src="{{ asset('public/image/landing-5/lock.svg')}}" alt="icon">
                 </div>
                 <div class="content">
                   <span>We don’t spam at all, our promise!</span>

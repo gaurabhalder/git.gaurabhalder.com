@@ -26,12 +26,14 @@ Route::get('send-mail', function () {
     dd("Email is Sent.");
 
 });
-Route::get('/', function () {
-    return view('website.home');
-});
+Route::get('/', 'WebsiteController@index')->name('home');
+
 Route::get('/about', function () {
-    return view('website.about');
-});
+    return view('website.about');});
+    
+Route::get('/service', function () {
+    return view('website.service');});
+
 //Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
