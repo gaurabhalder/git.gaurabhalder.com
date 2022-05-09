@@ -5,16 +5,17 @@
 <!-- Mirrored from finestdevs.com/demos/shade-preview/index-14.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2022 14:12:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-  <meta charset="UTF-8">
+      <meta charset="UTF-8">
+      
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ infos::get('title') }}</title>
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <title>Gaurab Halder</title>
+  <link rel="shortcut icon" href="{{ asset('public/image/favicon.png')}}" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <link rel="stylesheet" href="{{ asset('public/css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fonts/icon-font/css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fonts/typography-font/typo.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fonts/fontawesome-5/css/all.css')}}">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -22,17 +23,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
-  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="{{ asset('public/plugins/aos/aos.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('public/plugins/fancybox/jquery.fancybox.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('public/plugins/nice-select/nice-select.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('public/plugins/slick/slick.min.css')}}">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{{ asset('public/css/main.css')}}">
   <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="{{ asset('public/css/fontawesome.min.css')}}">
+  <?php 
+                use App\Models\Info;
+                use App\Models\Blog;
+                use App\Models\Logo;
+                use App\Models\Mail;
+                use App\Models\Pixel;
+                use App\Models\Portfolio;
+                use App\Models\Testimonial;
+                use App\Models\Website;
+                
+               $infos=info::get();
+               $pixels=pixel::get();
+               $blogs=blog::get();
+              ?> 
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <a class="shade-floating-btn" href="https://finestdevs.com/shade/#shade-pricing"><i class="fa-solid fa-phone-arrow-up-right"></i>Call Now</a>
+  
   <div class="site-wrapper overflow-hidden position-relative">
     <!-- Site Header -->
     <!-- Preloader -->
@@ -47,11 +63,11 @@
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
           <div class="brand-logo">
-            <a href="#">
+            <a href="{{url('/')}}">
               <!-- light version logo (logo must be black)-->
-              <img src="image/logo/logo-black.png" alt="" class="light-version-logo">
+              <img src="{{ asset('public/image/logo/logo-black.png')}}" alt="Gaurab Halder" class="light-version-logo">
               <!-- Dark version logo (logo must be White)-->
-              <img src="image/logo/logo-white.png" alt="" class="dark-version-logo">
+              <img src="{{ asset('public/image/logo/logo-white.png')}}" alt="Gaurab Halder" class="dark-version-logo">
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -66,20 +82,20 @@
               </div>
               <ul class="site-menu-main">
               <li class="nav-item">
-                  <a href="#"class="nav-link-item">Support</a>
+                  <a href="{{ url('/')}}"class="nav-link-item">Home</a>
                 </li><li class="nav-item">
                   <a href="#"class="nav-link-item">Support</a>
                 </li><li class="nav-item">
-                  <a href="#"class="nav-link-item">Support</a>
+                  <a href="{{ url('/service')}}"class="nav-link-item">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#"class="nav-link-item">Support</a>
+                  <a href="{{ url('/about')}}" class="nav-link-item">About</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="header-btn header-btn-l-14 ms-auto d-none d-xs-inline-flex">
-            <a target="" class="btn btn trail-btn focus-reset" href="tel:+8801873535171">
+            <a target="" class="btn btn trail-btn focus-reset" href="tel:{{ $infos[0]['phone'] }}">
               Call Now!
             </a>
           </div>
@@ -90,7 +106,50 @@
           <!--/.Mobile Menu Hamburger Ends-->
         </nav>
       </div>
+    {!!$pixels[0]['pixel_tag']!!}
+   
+    {!!$pixels[0]['google_analytic']!!}
+  
+    {!!$pixels[0]['script']!!}
+    
     </header>
+
+
+
+
+
+
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+<!--Facebook Chat-->
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "2125309967486182");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- navbar- -->
     <!-- Hero Area -->
     @yield('content')
@@ -148,25 +207,27 @@
               </div>
             </div>
           </div>
+         
         </div>
+         
       </div>
+      {!! $blogs[0]['footer'] !!}
     </footer>
   </div>
   <!-- Vendor Scripts -->
-  <script src="js/vendor.min.js"></script>
+  <script src="{{ asset('public/js/vendor.min.js')}}"></script>
   <!-- Plugin's Scripts -->
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
-  <script src="plugins/aos/aos.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="../../../porjoton.netlify.app/mekanic/js/waypoints.min.js"></script>
-  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
-  <script src="plugins/isotope/packery.pkgd.min.js"></script>
-  <script src="plugins/isotope/image.loaded.js"></script>
-  <script src="plugins/menu/menu.js"></script>
+  <script src="{{ asset('public/plugins/fancybox/jquery.fancybox.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/nice-select/jquery.nice-select.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/aos/aos.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/slick/slick.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/counter-up/jquery.counterup.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/isotope/packery.pkgd.min.js')}}"></script>
+  <script src="{{ asset('public/plugins/isotope/image.loaded.js')}}"></script>
+  <script src="{{ asset('public/plugins/menu/menu.js')}}"></script>
   <!-- Activation Script -->
-  <script src="js/custom.js"></script>
+  <script src="{{ asset('public/js/custom.js')}}"></script>
 </body>
 
 
